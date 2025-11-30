@@ -1,0 +1,9 @@
+services:
+  nuxt-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nuxt-app-prod
+    ports:
+      - "3000:3000"
+    restart: always
