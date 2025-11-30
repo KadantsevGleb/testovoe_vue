@@ -14,10 +14,10 @@
 		<div class="main__btns">
 			<div class="main__left-btns">
 				<UIMyButton color="brown" v-if="snapshot.length > 0" @click="cancelChange">Отменить изменение</UIMyButton>
-				<UIMyButton color="cadetblue" v-if="redoStack.length > 0" @click="redoChange">Повторить изменение</UIMyButton>
+				<UIMyButton color="#ea4335" v-if="redoStack.length > 0" @click="redoChange">Повторить изменение</UIMyButton>
 				<UIMyButton color="crimson" @click="confirmCancel = true">Отменить редактирование</UIMyButton>
 				<UIMyButton color="red" @click="confirmDelete = true">Удалить</UIMyButton>
-				<UIMyButton color="green" @click="saveChanges">Сохранить изменения</UIMyButton>
+				<UIMyButton color="mediumseagreen" @click="saveChanges">Сохранить изменения</UIMyButton>
 			</div>
 			<UIMyButton color="dodgerblue" @click="addTodo" class="main__right-btns">Добавить todo</UIMyButton>
 		</div>
@@ -132,7 +132,6 @@
 		margin: 20px auto 0;
 		&__title {
 			margin-bottom: 12px;
-			color: coral;
 			font-weight: 900;
 		}
 		&__content {

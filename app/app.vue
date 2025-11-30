@@ -51,6 +51,5 @@
   }
   body {
     font-family: 'Roboto', sans-serif;
-    background: #fee;
   }
 </style>

@@ -22,6 +22,6 @@
 		padding: 6px 12px;
 		background: none;
 		border: none;
-		border-bottom: 2px solid darkorange;
+		border-bottom: 2px solid #000;
 	}
 </style>

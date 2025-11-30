@@ -17,9 +17,9 @@
 				</ul>
 				<div class="note__btns">
 					<NuxtLink :to="{ name: 'id', params: { id: note.id } }">
-						<UIMyButton color="lightslategray" class="note__edit">Редактировать</UIMyButton>
+						<UIMyButton color="dodgerblue" class="note__edit">Редактировать</UIMyButton>
 					</NuxtLink>
-					<UIMyButton color="orangered" @click="confirmDelete(note.id)">Удалить</UIMyButton>
+					<UIMyButton color="red" @click="confirmDelete(note.id)">Удалить</UIMyButton>
 				</div>
 			</div>
 		</div>
@@ -100,8 +100,6 @@
 			flex-wrap: wrap;
 			gap: 20px;
 			padding: 20px;
-			background: lightsalmon;
-			border-radius: 20px;
 		}
 		&__nonotes{
 			color: darkred;
@@ -111,9 +109,9 @@
 
 	.note {
 		padding: 20px;
-		border: 2px solid crimson;
+		border: 2px solid #000;
 		width: 280px;
-		color: snow;
+		color: #222;
 		border-radius: 10px;
 		&__title {
 			text-transform: capitalize;
