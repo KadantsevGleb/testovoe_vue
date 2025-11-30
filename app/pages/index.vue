@@ -2,7 +2,6 @@
 	<div class="main">
 		<UIMyButton
 			color="dodgerblue"
-			style="font-size: 24px;"
 			@click="createNote"
 			class="main__create"
 		>
@@ -34,6 +33,8 @@
 			</div>
 		</div>
 	</Modal>
+
+	
 </template>
 
 <script setup>
@@ -85,11 +86,11 @@
 <style lang="scss" scoped>
 	.main {
 		max-width: 1000px;
-		margin: 20px auto;
+		margin: 20px auto 0;
 		display: flex;
 		flex-direction: column;
-		row-gap: 30px;
-		min-height: calc(100vh - 40px);
+		row-gap: 10px;
+		position: relative;
 		&__create {
 			font-weight: 900;
 			align-self: flex-end;
@@ -102,16 +103,20 @@
 			padding: 20px;
 		}
 		&__nonotes{
-			color: darkred;
+			color: #fefefe;
 			font-size: 20px;
 		}
 	}
 
 	.note {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		padding: 20px;
-		border: 2px solid #000;
+		border: 2px solid #fefefe;
+		height: 182px;
 		width: 280px;
-		color: #222;
+		color: #fefefe;
 		border-radius: 10px;
 		&__title {
 			text-transform: capitalize;

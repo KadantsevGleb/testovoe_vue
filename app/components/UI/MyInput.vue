@@ -22,6 +22,10 @@
 		padding: 6px 12px;
 		background: none;
 		border: none;
-		border-bottom: 2px solid #000;
+		color: #fff;
+		border-bottom: 2px solid #fff;
+		&::placeholder {
+			color: #fff;
+		}
 	}
 </style>

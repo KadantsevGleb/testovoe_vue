@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="root">
     <NuxtPage />
   </div>
 </template>
@@ -51,5 +51,11 @@
   }
   body {
     font-family: 'Roboto', sans-serif;
+    background: #000;
+    min-height: calc(100vh - 20px);
+    background-image: url('assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-position: calc(100% + 400px) calc(100% + 400px);
   }
 </style>

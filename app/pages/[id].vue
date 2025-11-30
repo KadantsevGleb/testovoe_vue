@@ -133,6 +133,7 @@
 		&__title {
 			margin-bottom: 12px;
 			font-weight: 900;
+			color: #fff;
 		}
 		&__content {
 			margin-bottom: 30px;
